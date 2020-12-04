@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="uxzP0cqNTX6TNMROdrFI73te1EQoWSH6Yqy3Ok8UKsE" />
+    <title>Daily Journal</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<%- include("partials/header") -%>
+<div class="container">
+    <h1>Home</h1>
+    <p><%= homeStartingContent %></p>
+    <% users.forEach(function(element){ %>
+    <%element.posts.forEach(function(post){ %>
+        <div class="article-content">
+                <h1 style="color: #0a568c"><%= post.title %></h1>
+            <p style="font-size: xx-small"><%= element.username%></p>
+            <p><%= post.content.substring(0,100)+" ..." %>
+                <a href="/posts/<%=element._id%>/<%=post._id%>">Read More</a>
+        </div>
+    <% })})%>
+</div>
+
+<%- include("partials/footer") -%>

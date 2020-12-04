@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<%- include("partials/header") -%>
+<div class="container">
+    <h1>Contact</h1>
+    <p><%= contact %></p>
+    <div class="icons">
+        <ul style="font-size: x-large; padding-top: 30px">
+            <li >
+                <p><a href="https://www.linkedin.com/in/nikhil-yadav-1a0773121/" target="_blank"><i class="fa fa-linkedin">
+                        </i></a></p>
+            </li>
+            <li>
+                <p><a href="https://www.facebook.com/arsenalmania1/" target="_blank"><i class="fa fa-facebook">
+                    </i></a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/Nick7hill" target="_blank"><i class="fa fa-github">
+                        </i></a></p>
+            </li>
+            <li>
+                <p><a href="https://github.com/ny5462" target="_blank"><i class="fa fa-github">
+                    </i></a> -> contains private code! </p>
+            </li>
+            <li>
+                <p><i class="fa fa-envelope" > ny5462@rit.edu</i></p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" style="padding-top: 20px">
+        <h3>To hit me up directly on inbox!</h3>
+        <form method="post" action=/contact>
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="FirstName LastName">
+                <label for="Message">Message</label>
+                <textarea type="text" cols="58" rows="5" class="form-control" placeholder="Write to me!" name="message"></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+<%- include("partials/footer") -%>

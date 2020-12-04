@@ -1,0 +1,20 @@
+<!--header as template-->
+<%- include("partials/header") -%>
+
+<div class="container">
+    <img id="display" src="img1.jpg" class="rounded-circle" ;alt="Nikhil" width="254" height="256">
+    <div class="info">
+        <h1> Nikhil  Yadav</h1>
+
+        <p>
+            <button class="round" style="font-size:20px" type="submit" onclick="window.open('/Resume_Nikhil_Yadav.pdf')">Resume
+                <i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></button>
+        </p>
+</div>
+    <h1>About</h1>
+    <p><%= about %></p>
+
+</div>
+
+<%- include("partials/footer") -%>
+<!--footer as template-->
